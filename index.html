@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ACT — AI Assisted Coding and Tooling</title>
+<meta name="description" content="ACT — AI Assisted Coding and Tooling. We build, integrate, and accelerate engineering teams with AI-native developer tools." />
+<link rel="icon" type="image/png" href="assets/act-logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=JetBrains+Mono:wght@400;500;600;700&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" aria-label="ACT home">
+      <img src="assets/act-logo.png" alt="" class="nav__logo" />
+      <span class="nav__brand-text">
+        <span class="nav__brand-mark">ACT</span>
+        <span class="nav__brand-sub">AI Assisted Coding &amp; Tooling</span>
+      </span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#what">What we do</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav__cta">
+      <span>Start a project</span>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__circuit" aria-hidden="true">
+    <svg viewBox="0 0 800 800" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <pattern id="dotgrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+          <circle cx="1" cy="1" r="1" fill="rgba(255,255,255,0.08)"/>
+        </pattern>
+      </defs>
+      <rect width="800" height="800" fill="url(#dotgrid)"/>
+      <g stroke="rgba(255,255,255,0.18)" stroke-width="1.2" fill="none">
+        <path d="M0 200 L180 200 L220 240 L420 240 L460 200 L800 200"/>
+        <path d="M0 360 L120 360 L160 400 L500 400 L540 360 L800 360"/>
+        <path d="M0 520 L240 520 L280 560 L620 560 L660 520 L800 520"/>
+        <path d="M120 0 L120 80 L160 120 L160 380"/>
+        <path d="M620 0 L620 100 L660 140 L660 540"/>
+      </g>
+      <g fill="var(--orange)">
+        <circle cx="220" cy="240" r="4"/>
+        <circle cx="460" cy="200" r="4"/>
+        <circle cx="540" cy="360" r="4"/>
+        <circle cx="280" cy="560" r="4"/>
+        <circle cx="660" cy="140" r="4"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+    <div class="hero__meta">
+      <span class="dot" aria-hidden="true"></span>
+      <span>ACT // 001</span>
+      <span class="hero__meta-sep">—</span>
+      <span>Engineering, with AI in the loop</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line">We build the</span>
+      <span class="line"><em>tools</em> &amp; <em>systems</em></span>
+      <span class="line">that <span class="hl">make engineers</span></span>
+      <span class="line"><span class="hl">10&times; faster.</span></span>
+    </h1>
+
+    <p class="hero__lede">
+      ACT is an AI-native software studio. We integrate large language models, agentic
+      workflows, and bespoke developer tooling into the daily work of engineering teams —
+      from one-line copilots to full internal platforms.
+    </p>
+
+    <div class="hero__ctas">
+      <a href="#contact" class="btn btn--primary">
+        <span>Book a discovery call</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+      </a>
+      <a href="#what" class="btn btn--ghost">
+        <span>See what we do</span>
+      </a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="stat">
+        <span class="stat__num"><span data-count="40">0</span>%</span>
+        <span class="stat__label">avg. cycle-time reduction across pilots</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num">&lt;<span data-count="6">0</span>w</span>
+        <span class="stat__label">from kickoff to first working prototype</span>
+      </div>
+      <div class="stat">
+        <span class="stat__num"><span data-count="12">0</span>+</span>
+        <span class="stat__label">production AI systems shipped</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>scroll</span>
+    <span class="hero__scroll-line"></span>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<section class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>LLM Integration</span><span class="m-dot">//</span>
+    <span>Agentic Workflows</span><span class="m-dot">//</span>
+    <span>Developer Tooling</span><span class="m-dot">//</span>
+    <span>RAG &amp; Retrieval</span><span class="m-dot">//</span>
+    <span>MCP Servers</span><span class="m-dot">//</span>
+    <span>Internal Platforms</span><span class="m-dot">//</span>
+    <span>Prompt Engineering</span><span class="m-dot">//</span>
+    <span>Code Generation</span><span class="m-dot">//</span>
+    <!-- duplicate for seamless loop -->
+    <span>LLM Integration</span><span class="m-dot">//</span>
+    <span>Agentic Workflows</span><span class="m-dot">//</span>
+    <span>Developer Tooling</span><span class="m-dot">//</span>
+    <span>RAG &amp; Retrieval</span><span class="m-dot">//</span>
+    <span>MCP Servers</span><span class="m-dot">//</span>
+    <span>Internal Platforms</span><span class="m-dot">//</span>
+    <span>Prompt Engineering</span><span class="m-dot">//</span>
+    <span>Code Generation</span><span class="m-dot">//</span>
+  </div>
+</section>
+
+<!-- ============ WHAT ============ -->
+<section class="what" id="what">
+  <div class="section-head">
+    <span class="kicker"><span class="kicker__num">01</span> What we do</span>
+    <h2 class="section-title">
+      Engineering teams are drowning in toil.<br/>
+      <span class="hl-orange">We replace it with leverage.</span>
+    </h2>
+    <p class="section-lede">
+      We are not a generic consultancy and we don't sell hours. ACT partners with software
+      and operations teams to identify the highest-friction parts of their workflow — then
+      replaces them with AI-assisted systems that compound over time.
+    </p>
+  </div>
+
+  <div class="what__grid">
+    <article class="what__card what__card--lg">
+      <div class="what__card-num">/01</div>
+      <h3>Diagnose</h3>
+      <p>
+        We sit alongside your engineers for one to two weeks, instrument the work,
+        and produce a friction map: where minutes leak, where context is lost, where AI can
+        meaningfully intervene.
+      </p>
+      <ul class="what__list">
+        <li>Workflow shadowing</li>
+        <li>Toil &amp; cycle-time audit</li>
+        <li>Opportunity ranking</li>
+      </ul>
+    </article>
+
+    <article class="what__card">
+      <div class="what__card-num">/02</div>
+      <h3>Design</h3>
+      <p>We design the smallest possible AI-assisted system that solves the real bottleneck — not the buzzword.</p>
+    </article>
+
+    <article class="what__card">
+      <div class="what__card-num">/03</div>
+      <h3>Build</h3>
+      <p>From copilots and CLIs to full internal platforms — shipped iteratively, tested in production.</p>
+    </article>
+
+    <article class="what__card what__card--lg what__card--accent">
+      <div class="what__card-num">/04</div>
+      <h3>Operate</h3>
+      <p>
+        AI systems decay. Prompts drift. Models change. We stay on as your AI ops partner —
+        evaluations, observability, and continuous improvement so the leverage compounds
+        instead of evaporating.
+      </p>
+      <ul class="what__list">
+        <li>Eval harnesses &amp; regression suites</li>
+        <li>Cost &amp; latency monitoring</li>
+        <li>Model &amp; prompt upgrades</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-head section-head--center">
+    <span class="kicker"><span class="kicker__num">02</span> Services</span>
+    <h2 class="section-title">
+      Four ways we plug in.
+    </h2>
+  </div>
+
+  <div class="services__list">
+    <article class="service">
+      <div class="service__index">S/01</div>
+      <div class="service__title">
+        <h3>AI-Assisted Coding Adoption</h3>
+        <span class="service__tag">Most popular</span>
+      </div>
+      <p class="service__desc">
+        Roll out Claude Code, Cursor, Copilot, and custom agents across your engineering
+        org — with the guardrails, prompts, and internal training that actually move the
+        productivity needle.
+      </p>
+      <div class="service__meta">
+        <div><span>Typical engagement</span><strong>4&ndash;8 weeks</strong></div>
+        <div><span>Team size</span><strong>10&ndash;200 engineers</strong></div>
+        <div><span>Outcome</span><strong>Measurable cycle-time drop</strong></div>
+      </div>
+    </article>
+
+    <article class="service">
+      <div class="service__index">S/02</div>
+      <div class="service__title">
+        <h3>Custom Developer Tooling</h3>
+      </div>
+      <p class="service__desc">
+        Bespoke CLIs, MCP servers, code-aware agents, and internal platforms — built on
+        your codebase, your stack, your conventions. The tool your team wishes existed.
+      </p>
+      <div class="service__meta">
+        <div><span>Typical engagement</span><strong>6&ndash;16 weeks</strong></div>
+        <div><span>Deliverable</span><strong>Production system + handoff</strong></div>
+        <div><span>Ownership</span><strong>You keep the code</strong></div>
+      </div>
+    </article>
+
+    <article class="service">
+      <div class="service__index">S/03</div>
+      <div class="service__title">
+        <h3>RAG &amp; Knowledge Systems</h3>
+      </div>
+      <p class="service__desc">
+        Retrieval pipelines, chat-with-your-docs, agentic search over codebases and
+        knowledge stores — engineered for accuracy first, with evals you can trust.
+      </p>
+      <div class="service__meta">
+        <div><span>Typical engagement</span><strong>4&ndash;10 weeks</strong></div>
+        <div><span>Data</span><strong>On-prem or cloud</strong></div>
+        <div><span>Includes</span><strong>Eval harness</strong></div>
+      </div>
+    </article>
+
+    <article class="service">
+      <div class="service__index">S/04</div>
+      <div class="service__title">
+        <h3>Fractional AI Engineering</h3>
+      </div>
+      <p class="service__desc">
+        For teams that need senior AI engineering muscle without a full hire. We embed
+        with your team part-time, ship code, and level up your in-house engineers along
+        the way.
+      </p>
+      <div class="service__meta">
+        <div><span>Cadence</span><strong>2&ndash;3 days / week</strong></div>
+        <div><span>Minimum</span><strong>3 months</strong></div>
+        <div><span>Best for</span><strong>Series A&ndash;C teams</strong></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-head">
+    <span class="kicker"><span class="kicker__num">03</span> Process</span>
+    <h2 class="section-title">From first call to shipped system — in weeks, not quarters.</h2>
+  </div>
+
+  <ol class="timeline">
+    <li class="timeline__item">
+      <div class="timeline__week">Week 0</div>
+      <div class="timeline__body">
+        <h4>Discovery</h4>
+        <p>A 45-minute call. We listen. You walk away with a written summary of the highest-leverage opportunity we see, whether or not you hire us.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <div class="timeline__week">Week 1&ndash;2</div>
+      <div class="timeline__body">
+        <h4>Embed &amp; Diagnose</h4>
+        <p>We shadow your team, measure the toil, and produce a written diagnosis with ranked opportunities and rough effort estimates.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <div class="timeline__week">Week 3</div>
+      <div class="timeline__body">
+        <h4>Prototype</h4>
+        <p>The first working prototype lands in production-shaped form — not a slide deck. Real engineers use it, real metrics move.</p>
+      </div>
+    </li>
+    <li class="timeline__item">
+      <div class="timeline__week">Week 4&ndash;8</div>
+      <div class="timeline__body">
+        <h4>Build &amp; Iterate</h4>
+        <p>We ship weekly. You see progress weekly. Scope adjusts based on what's actually working.</p>
+      </div>
+    </li>
+    <li class="timeline__item timeline__item--accent">
+      <div class="timeline__week">Ongoing</div>
+      <div class="timeline__body">
+        <h4>Operate</h4>
+        <p>We stay on as your AI ops partner. Evals, observability, prompt &amp; model upgrades. The leverage compounds instead of decaying.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ STACK ============ -->
+<section class="stack" id="stack">
+  <div class="section-head">
+    <span class="kicker"><span class="kicker__num">04</span> Stack</span>
+    <h2 class="section-title">Model-agnostic. Vendor-skeptical. Engineer-first.</h2>
+    <p class="section-lede">
+      We use the best tool for the job and tell you when it changes. We have shipped
+      production work on every major foundation model and across every major cloud.
+    </p>
+  </div>
+
+  <div class="stack__grid">
+    <div class="stack__col">
+      <h5>Models</h5>
+      <ul>
+        <li>Claude (Opus, Sonnet, Haiku)</li>
+        <li>GPT-4 / GPT-5 family</li>
+        <li>Gemini</li>
+        <li>Open-weight (Llama, Qwen, Mistral)</li>
+      </ul>
+    </div>
+    <div class="stack__col">
+      <h5>Frameworks</h5>
+      <ul>
+        <li>MCP (Model Context Protocol)</li>
+        <li>LangGraph / LlamaIndex</li>
+        <li>Pydantic AI</li>
+        <li>Custom agent runtimes</li>
+      </ul>
+    </div>
+    <div class="stack__col">
+      <h5>Infra</h5>
+      <ul>
+        <li>AWS / GCP / Azure</li>
+        <li>Modal, Fly, Vercel</li>
+        <li>Postgres + pgvector</li>
+        <li>On-prem &amp; air-gapped</li>
+      </ul>
+    </div>
+    <div class="stack__col">
+      <h5>Languages</h5>
+      <ul>
+        <li>Python, TypeScript</li>
+        <li>Go, Rust</li>
+        <li>SQL, Bash</li>
+        <li>Whatever your codebase speaks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANIFESTO ============ -->
+<section class="manifesto">
+  <div class="manifesto__inner">
+    <span class="kicker kicker--light"><span class="kicker__num">05</span> Manifesto</span>
+    <p class="manifesto__text">
+      We believe the best AI systems are <em>quiet</em>. They don't have a chat window.
+      They don't ask you to learn a new workflow. They sit inside the tools you already use
+      &mdash; the IDE, the terminal, the ticket queue &mdash; and they remove friction you
+      stopped noticing years ago. <span class="hl-orange">That's what we build.</span>
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="contact__grid">
+    <div class="contact__left">
+      <span class="kicker"><span class="kicker__num">06</span> Contact</span>
+      <h2 class="section-title">Let's see if we're a fit.</h2>
+      <p class="section-lede">
+        Tell us about your team and the friction you'd like to remove. We respond to every
+        inquiry within one business day &mdash; usually with a written take on what we'd do
+        first.
+      </p>
+
+      <div class="contact__details">
+        <div>
+          <span class="contact__label">Email</span>
+          <a href="mailto:hello@act.dev">hello@act.dev</a>
+        </div>
+        <div>
+          <span class="contact__label">Response time</span>
+          <span>&lt; 1 business day</span>
+        </div>
+        <div>
+          <span class="contact__label">Currently</span>
+          <span><span class="status-dot"></span> Booking Q3 engagements</span>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact__form" onsubmit="event.preventDefault(); this.querySelector('.contact__success').hidden=false; this.querySelector('.contact__fields').hidden=true;">
+      <div class="contact__fields">
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" type="text" required placeholder="Jane Engineer" />
+        </div>
+        <div class="field">
+          <label for="f-email">Work email</label>
+          <input id="f-email" type="email" required placeholder="jane@company.com" />
+        </div>
+        <div class="field">
+          <label for="f-company">Company</label>
+          <input id="f-company" type="text" placeholder="Company name" />
+        </div>
+        <div class="field">
+          <label for="f-interest">What you're looking for</label>
+          <select id="f-interest">
+            <option>AI-Assisted Coding Adoption</option>
+            <option>Custom Developer Tooling</option>
+            <option>RAG &amp; Knowledge Systems</option>
+            <option>Fractional AI Engineering</option>
+            <option>Not sure yet — let's talk</option>
+          </select>
+        </div>
+        <div class="field field--full">
+          <label for="f-msg">What's the friction?</label>
+          <textarea id="f-msg" rows="4" placeholder="The slowest, most annoying part of your team's workflow right now…"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <span>Send inquiry</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>
+        </button>
+      </div>
+      <div class="contact__success" hidden>
+        <div class="contact__success-mark" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="square" stroke-linejoin="miter"/></svg>
+        </div>
+        <h4>Inquiry received.</h4>
+        <p>We'll be in touch within one business day with a written take on where we'd start.</p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/act-logo.png" alt="ACT logo" class="footer__logo" />
+      <div>
+        <div class="footer__title">ACT</div>
+        <div class="footer__sub">AI Assisted Coding and Tooling</div>
+      </div>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h6>Site</h6>
+        <a href="#what">What we do</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#stack">Stack</a>
+      </div>
+      <div>
+        <h6>Connect</h6>
+        <a href="mailto:hello@act.dev">hello@act.dev</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">GitHub</a>
+      </div>
+      <div>
+        <h6>Legal</h6>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>© <span id="year"></span> ACT — AI Assisted Coding and Tooling. All rights reserved.</span>
+    <span class="footer__build">v1.0 · built with care</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
