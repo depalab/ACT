@@ -1,6 +1,12 @@
 # ACT — AI Assisted Coding and Tooling
 
-Marketing site for ACT, an AI-native software studio that builds developer tooling and integrates AI into engineering workflows.
+Marketing site for **ACT**, an educational program of the **Center for Equitable AI and Machine Learning Systems (CEAMLS)** at **Morgan State University**.
+
+ACT teaches AI-assisted coding and tooling skills to students, schools, and universities through three program tracks:
+
+1. **Monthly workshops** — delivered through student organizations, K–12 schools, universities, and the Learn & Lunch series hosted by CEAMLS.
+2. **NSEA — National Symposium on Effective & Ethical AI** — the annual flagship convening hosted by CEAMLS at Morgan State. [equitableaisymposium.com](https://www.equitableaisymposium.com/)
+3. **Educational events & conferences** — panels, demos, hackathons, and conference programming across the academic and civic community.
 
 ## Structure
 
@@ -15,7 +21,7 @@ Marketing site for ACT, an AI-native software studio that builds developer tooli
 
 ## Local preview
 
-No build step. Just open `index.html` in a browser, or serve the folder:
+No build step required. Open `index.html` in any browser, or serve the folder:
 
 ```bash
 # Python 3
@@ -31,8 +37,8 @@ Then visit http://localhost:8000
 
 - Pure HTML, CSS, JavaScript — no framework, no build
 - Google Fonts: Fraunces, JetBrains Mono, Inter Tight
-- IntersectionObserver for scroll reveals (with `unobserve` cleanup)
-- `prefers-reduced-motion` respected
+- IntersectionObserver for scroll reveals (with `unobserve` cleanup — no memory leaks)
+- `prefers-reduced-motion` respected throughout
 
 ## Deployment
 
@@ -45,8 +51,14 @@ Drop the folder onto any static host:
 
 ## Editing copy
 
-All visible text lives in `index.html`. Search for the section you want (`<!-- HERO -->`, `<!-- SERVICES -->`, etc.) and edit in place.
+All visible text lives in `index.html`. Search for the section you want (`<!-- HERO -->`, `<!-- PROGRAMS -->`, `<!-- NSEA SPOTLIGHT -->`, etc.) and edit in place.
+
+## Related links
+
+- [CEAMLS at Morgan State](https://www.morgan.edu/ceamls)
+- [NSEA Symposium](https://www.equitableaisymposium.com/)
+- [Morgan State University](https://www.morgan.edu/)
 
 ## License
 
-© ACT. All rights reserved.
+© ACT — A program of CEAMLS, Morgan State University. All rights reserved.
